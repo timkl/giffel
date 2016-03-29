@@ -14,6 +14,6 @@ e.g.
 
 Giffel is using [ffmpeg](https://www.ffmpeg.org) and [imagemagick](http://www.imagemagick.org) to convert the video into an animated gif, it's all compiled into an OSX application with [Platypus](http://www.sveinbjorn.org/platypus).
 
-Please note that this is very much a proof-of-concept, your success may vary.
+Note that Giffel.app is a proof-of-concept, your success may vary.
 
 Also note that Giffel is the swedish word for Croissant.
