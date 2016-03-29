@@ -12,7 +12,7 @@ e.g.
 
 …will create a looping animated gif with a framerate of 12.
 
-Giffel is using [ffmpeg](https://www.ffmpeg.org) and [imagemagick](http://www.imagemagick.org) to convert the video to an animated gif, it's all compiled into an OSX application with [Platypus](http://www.sveinbjorn.org/platypus).
+Giffel is using [ffmpeg](https://www.ffmpeg.org) and [imagemagick](http://www.imagemagick.org) to convert the video into an animated gif, it's all compiled into an OSX application with [Platypus](http://www.sveinbjorn.org/platypus).
 
 Please note that this is very much a proof-of-concept, your success may vary.
 
