@@ -2,7 +2,7 @@
 
 Giffel allows you to convert video to animated gifs without opening Photoshop.
 
-Use the following syntax in your video filename and drop your video file on Giffel.app:
+Use the following syntax in your video filename and drop your file on Giffel.app:
 
 <code>[file-name]-f[frame-rate]-[loop || noLoop].mov</code>
 
