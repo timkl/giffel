@@ -1,0 +1,29 @@
+#!/bin/bash
+
+STR=$1
+
+IFS='-' read -r -a array <<< "$STR"
+
+frameRateRaw=${array[${#array[@]} - 2]}
+IFS='f' read -r -a frameRate <<< "$frameRateRaw"
+
+loopValueRaw=${array[${#array[@]} - 1]}
+IFS='.' read -r -a loopValue <<< "$loopValueRaw"
+
+
+f="${frameRate[1]}"
+loop="-${loopValue[0]} 0"
+
+if [ "$loop" != "-loop 0" ]
+	then
+		loop="-loop 1"
+fi
+
+echo $f
+echo $loop
+
+
+mkdir $1-files &&
+./ffmpeg -i $1 -r $f $1-files/output1%3d.png &&
+./convert -delay 8 $loop $1-files/output*.png $1.gif &&
+rm -rf $1-files
